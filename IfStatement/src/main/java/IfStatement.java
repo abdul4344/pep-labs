@@ -1,3 +1,4 @@
+import javax.naming.spi.ResolveResult;
 
 public class IfStatement {
     /**
@@ -17,6 +18,11 @@ public class IfStatement {
      * @return x if bool is true. if bool is false, return y.
      */
     public int ifExample(boolean bool, int x, int y){
-        return 0;
+        
+        if (bool==true) {
+            return x;
+        } else  {
+            return y;
+        }
     }
 }
